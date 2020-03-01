@@ -25,8 +25,15 @@ function show() {
     var ctx = document.getElementById("equipmentView").getContext("2d");
     ctx.drawImage(img,0,0,200,200);
   }
-  var name = document.getElementById("equipmentName");
-  name.innerHTML = selectedName;
+  if(selectedName != "장비선택") {
+    var name = document.getElementById("equipmentName");
+    name.innerHTML = selectedName;
+    document.getElementById("tagCount").innerHTML = tagCount;
+    document.getElementById("blueDustCount").innerHTML = blueDust;
+    document.getElementById("optionOneName").innerHTML = "옵션1";
+    document.getElementById("optionTwoName").innerHTML = "옵션2";
+    document.getElementById("equipment").disabled = true;
+  }
 
   if(selectedEquipment == "sword") {
     img.src = "./sword.PNG";
@@ -45,15 +52,11 @@ function show() {
   } else if(selectedEquipment == "spear") {
     img.src = "./spear.PNG";
   }
-  document.getElementById("tagCount").innerHTML = tagCount;
-  document.getElementById("blueDustCount").innerHTML = blueDust;
-  document.getElementById("optionOneName").innerHTML = "옵션1";
-  document.getElementById("optionTwoName").innerHTML = "옵션2";
-  document.getElementById("equipment").disabled = true;
+
 }
 
 function convert() {
-  if(selectedName == null) {
+  if(selectedName == "장비선택") {
     alert("장비선택");
   }
   else {
@@ -230,7 +233,7 @@ function convert() {
 function newWindow() {
   tagCount = 0*1;
   blueDust = 0*1;
-  selectedName = null;
+  selectedName = "장비선택";
   tagName = null;
   recordName = null;
   option = 0;
