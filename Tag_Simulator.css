@@ -1,42 +1,13 @@
-@media screen and (min-width: 769px) {
-  #equipmentView {
-    margin : auto;
-  }
-  #explain {
-    position : fixed;
-    top : 100px;
-    left : 50px;
-  }
-  #convert {
-    font-size : 20px;
-  }
-  #equipmentName {
-    color : rgb(231,69,104);
-    font-weight : 700;
-  }
-  .option {
-    text-align: center;
-  }
+#equipmentView {
+  margin : auto;
 }
-
-@media screen and (max-width: 768px) {
-  #equipmentView {
-    margin : auto;
-  }
-  #explain {
-    position : static;
-    top : 100px;
-    left : 50px;
-  }
-  #convert {
-    font-size : 20px;
-  }
-  #equipmentName {
-    color : rgb(231,69,104);
-    font-weight : 700;
-  }
-  .option {
-    text-align: center;
-  }
-
+#convert {
+  font-size : 20px;
+}
+#equipmentName {
+  color : rgb(231,69,104);
+  font-weight : 700;
+}
+.option {
+  text-align: center;
 }
