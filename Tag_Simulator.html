@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>랜덤태그시뮬레이터</title>
+    <script src = "./Tag_Simulator.js"></script>
+    <link rel = "stylesheet" href = "./Tag_Simulator.css" type = "text/css">
+  </head>
+  <body onload = "draw()">
+  <center>
+    <h1>랜덤태그시뮬레이터</h1>
+    <select id = "equipment">
+      <option value = "">장비선택</option>
+      <option value = "sword">트와일라잇 원더러 익스텐드</option>
+      <option value = "gun">트와일라잇 스트라토스 익스텐드</option>
+      <option value = "scythe">트와일라잇 글로리에 익스텐드</option>
+      <option value = "guitar">트와일라잇 키리에 익스텐드</option>
+      <option value = "gauntlets">트와일라잇 프레시온 익스텐드</option>
+      <option value = "hammer">트와일라잇 루이나 익스텐드</option>
+      <option value = "knife">트와일라잇 트레이스 익스텐드</option>
+      <option value = "spear">트와일라잇 디스토션 익스텐드</option>
+    </select>
+    <div id = "explain">
+      블루더스트 소모량 = (히랜택x1 + 재료히랜택x1 + 재료레전랜택x9) = 3645<br>
+      장비 선택 후 확인누르면 다시 장비 선택 불가<br>
+      초기화 버튼 누른 후에 다시 장비 선택 가능
+    </div>
+      <button id = "selectEquipment" onclick = "show()">확인</button>
+      <button id = "clean" onclick = "newWindow()">초기화</button><br>
+      <br><br>
+      <div id = "simulator">
+          <canvas id="equipmentView" width="200" height="200" style="border:solid 3px;"></canvas>
+        <p id = "equipmentName"></p>
+        <p id = "optionOneName" class = "option"></p>
+        <p id = "optionTwoName" class = "option"></p>
+      </div>
+      <br><br>
+    <button id = "convert" onclick = "convert()">태그재련</button>
+    <p id = "count">재련횟수 : <span id = tagCount><span/></p>
+    <p id = "usedBlueDust">사용한 블루더스트 : <span id = blueDustCount></span></p><br><br>
+    <div id = "optionRecord">
+    </div>
+  </center>
+  </body>
+</html>
