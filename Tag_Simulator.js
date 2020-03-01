@@ -274,9 +274,9 @@ function convertContinue() {
       alert("태그선택");
     }
     else {
-      while(tagValue != wantTag) {
+      do {
         convert();
-      }
+      }while(tagValue != wantTag);
     }
   }
 }
