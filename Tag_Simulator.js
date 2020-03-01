@@ -56,7 +56,7 @@ function show() {
 }
 
 function convert() {
-  if(selectedName == "장비선택") {
+  if(selectedName == "장비선택" || selectedName == undefined) {
     alert("장비선택");
   }
   else {
