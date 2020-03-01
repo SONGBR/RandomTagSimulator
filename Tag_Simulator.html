@@ -7,6 +7,11 @@
   </head>
   <body onload = "draw()">
   <center>
+    <div id = "explain">
+      블루더스트 소모량 = (히랜택x1 + 재료히랜택x1 + 재료레전랜택x9) = 3645<br>
+      장비 선택 후 확인누르면 다시 장비 선택 불가<br>
+      초기화 버튼 누른 후에 다시 장비 선택 가능
+    </div>
     <h1>랜덤태그시뮬레이터</h1>
     <select id = "equipment">
       <option value = "">장비선택</option>
@@ -19,11 +24,6 @@
       <option value = "knife">트와일라잇 트레이스 익스텐드</option>
       <option value = "spear">트와일라잇 디스토션 익스텐드</option>
     </select>
-    <div id = "explain">
-      블루더스트 소모량 = (히랜택x1 + 재료히랜택x1 + 재료레전랜택x9) = 3645<br>
-      장비 선택 후 확인누르면 다시 장비 선택 불가<br>
-      초기화 버튼 누른 후에 다시 장비 선택 가능
-    </div>
       <button id = "selectEquipment" onclick = "show()">확인</button>
       <button id = "clean" onclick = "newWindow()">초기화</button><br>
       <br><br>
